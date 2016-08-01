@@ -1,8 +1,4 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
-import RootComponent from 'app/root/app-root';
-import {provide} from "angular2/core";
+import {bootstrap} from '@angular/platform-browser-dynamic'
+import ApplicationComponent from 'app/components/application/application'
 
-bootstrap(RootComponent, [
-    ROUTER_PROVIDERS, provide(APP_BASE_HREF, {useValue: '/'})
-]);
+bootstrap(ApplicationComponent);
